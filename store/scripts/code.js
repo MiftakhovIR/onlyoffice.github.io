@@ -95,7 +95,7 @@ function _resolveBaseUrl() {
 }
 
 const ioUrl = _resolveBaseUrl();                                                         // real IO URL
-const configUrl = ( isLocal ? OOMarketplaceUrl : ioUrl ) + 'store/config.json'; // url to config.json (it's for desktop. we should use remote config)
+const configUrl = ( isLocal ? OOMarketplaceUrl : ioUrl ) + 'store/config.json?v=20261125-4'; // url to config.json (it's for desktop. we should use remote config)
 
 // #endregion
 
@@ -125,7 +125,7 @@ const Marketplace = {
 		return this._fetchMarketplacePlugins()
 			.catch(function(err) {
 				if (!isLocal) {
-					createError( new Error('Problem with loading marketplace config.') );
+					console.error('Marketplace details:', configUrl, err); createError( new Error('Problem with loading marketplace config.') );
 				}
 				return [];
 			}).then(function(result) {
