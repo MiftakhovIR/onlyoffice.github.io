@@ -1,0 +1,43 @@
+{
+  "name": "Sheet Exporter",
+  "nameLocale": {
+    "ru": "Экспорт листов",
+    "en": "Sheet Exporter"
+  },
+  "guid": "asc.{B3748DB9-2C21-4F81-8C35-7619E9F40E62}",
+  "version": "0.1.1",
+  "variations": [
+    {
+      "description": "Export active or selected worksheets to XLSX or ZIP.",
+      "url": "index.html",
+      "icons": [
+        "icon.png",
+        "icon@2x.png"
+      ],
+      "isViewer": false,
+      "EditorsSupport": [
+        "cell"
+      ],
+      "isVisual": true,
+      "isModal": false,
+      "isInsideMode": true,
+      "type": "panel",
+      "initDataType": "none",
+      "initData": "",
+      "buttons": [],
+      "descriptionLocale": {
+        "ru": "Экспорт текущего или выбранных листов в XLSX и ZIP."
+      },
+      "store": {
+        "background": {
+          "light": "#e7f2eb",
+          "dark": "#224b36"
+        },
+        "categories": [
+          "specAbilities"
+        ]
+      }
+    }
+  ],
+  "offered": "Sheet Exporter"
+}
